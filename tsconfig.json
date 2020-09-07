@@ -22,7 +22,7 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*", "lib/build"
   ],
   "exclude": [
     "node_modules",
