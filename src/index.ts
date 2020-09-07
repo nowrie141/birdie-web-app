@@ -4,7 +4,7 @@ import * as path from 'path';
 
 const app = express();
 
-const port = process.env.PORT || 8000
+const port: number = parseInt(<string>process.env.PORT, 10) || 8000
 
 var mysql = require('mysql')
 
