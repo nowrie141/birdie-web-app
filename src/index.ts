@@ -37,6 +37,9 @@ app.get('/data', function (_req: any, res: any, _next: any) {
   });
 });
 
+app.get('/*', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 const server = new Server(app);
 server.start(port)
